@@ -24,14 +24,10 @@ export const Hero = () => {
       <div className="flex justify-center mt-8">
         <div className="inline-flex relative">
       <h1 className="text-7xl sm:text-9xl font-bold tracking-tighter text-center inline-flex">One Task <br />at a Time</h1>
-      <motion.div className="absolute right-[476px] top-[108px] hidden sm:inline" drag 
-      // dragSnapToOrigin
-      >
+      <motion.div className="absolute right-[476px] top-[108px] hidden sm:inline" drag>
       <Image src={cursorImage} height="200" width="200" alt="" className="max-w-none" draggable="false"/>
       </motion.div>
-      <motion.div className="absolute top-[56px] left-[498px] hidden sm:inline" drag
-      // dragSnapToOrigin FUNCAO PARA MEXER OS BOTOES
-      >
+      <motion.div className="absolute top-[56px] left-[498px] hidden sm:inline" drag>
       <Image src={messageImage} alt="" height="200" width="200" className="max-w-none" draggable="false"/>
       </motion.div>
       </div>
@@ -43,7 +39,6 @@ export const Hero = () => {
       <button className="bg-white text-black py-3 px-5 rounded-lg font-medium">Get for free</button>
       </div>
     </div>
-    
   </div>
   );
 };
